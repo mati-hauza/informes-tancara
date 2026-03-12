@@ -13,14 +13,10 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "James-Yu.latex-workshop",
                 "ms-vsliveshare.vsliveshare",
                 "valentjn.vscode-ltex",
             ],
             "settings": {
-                "latex-workshop.latex.autoBuild.run": "onFileChange",
-                "latex-workshop.view.pdf.viewer": "tab",
-                "latex-workshop.latex.recipe.default": "latexmk (latexmkrc)",
                 "ltex.language": "es"
             }
         }
