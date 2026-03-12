@@ -1,0 +1,30 @@
+  {
+    "name": "Informes para el Tancarita",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:1": {
+            "configureZshAsDefaultShell": true
+        }
+    },
+
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-lang-spanish texlive-pictures texlive-science texlive-bibtex-extra latexmk chktex",
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "James-Yu.latex-workshop",
+                "ms-vsliveshare.vsliveshare",
+                "valentjn.vscode-ltex",
+            ],
+            "settings": {
+                "latex-workshop.latex.autoBuild.run": "onFileChange",
+                "latex-workshop.view.pdf.viewer": "tab",
+                "latex-workshop.latex.recipe.default": "latexmk (latexmkrc)",
+                "ltex.language": "es"
+            }
+        }
+    },
+
+    "remoteUser": "vscode"
+}
